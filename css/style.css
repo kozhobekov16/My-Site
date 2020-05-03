@@ -1,0 +1,72 @@
+header {
+    background-color: black;
+  }
+  
+  header img {
+    width: 5rem;
+  }
+  
+  header .knock {
+    margin-left: auto;
+  }
+  
+  .content {
+    background: url(https://img1.goodfon.ru/original/1600x900/d/4c/hi-tech-technology-noutbuk.jpg) no-repeat;
+    background-size: cover;
+    height: 120vh;
+  }
+  
+  .content .main {
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: text;
+  }
+  
+  @keyframes text {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
+  .text {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+    font-size: 70px;
+    padding-top: 10%;
+  }
+  
+  .mini{
+    width: 50%;
+    height: 20%;
+    background: red;
+    margin: 10%;
+  }
+  /* 
+  @keyframes smile {
+    0% {
+      color: red;
+    }
+  
+    25% {
+      color: blue;
+    }
+  
+    50% {
+      color: black;
+    }
+  
+    75% {
+      color: yellow;
+    }
+  
+    100% {
+      color: green;
+    }
+  } */
