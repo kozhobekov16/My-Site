@@ -10,7 +10,7 @@ header {
     }
 }
 .content {
-    // background: url(https://www.whoa.in/20140224-Whoa/Power-Button-Dark-Background-Wallpaper.jpg);
+    //background: url(https://www.whoa.in/20140224-Whoa/Power-Button-Dark-Background-Wallpaper.jpg);
     background: url(https://i.pinimg.com/originals/71/4c/93/714c9373e922654f394fa8fff35fef36.gif) no-repeat;
     background-size: cover;
     height: 120vh;
@@ -265,9 +265,56 @@ header {
         color: blue;
       }
 }
+.maps{
+    background: black;
+    padding-top: 10%;
+    text-transform: uppercase;
+    text-align: center;
+    &-main{
+        padding-top: 2%;
+    }
+}
+.flip__body {
+	position: relative;
+	width: 400px;
+	height: 300px;
+	transition: all 0.8s ease 0s;
+	transform-style: preserve-3d;
+}
+.flip__front,
+.flip__back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flip__front {
+	z-index: 2;
+	transform: rotateY(0deg);
+	background-color: black;
+}
+.flip__back {
+    transform: rotateY(-180deg);
+    background-color: black;
+}
+
+.flip:hover .flip__body {
+	transform: rotateY(-180deg);
+}
+.explain{
+    padding-top: 5%;
+}
 .down{
     margin: 0;
+    margin-top: -1%; 
+    background: black;
     &-text{
+        background-size: 50vh;
+        align-items:center;
         background: black;
         text-transform: uppercase;
         padding-top: 5%;
@@ -385,9 +432,25 @@ header {
         margin: 0;
         margin-top: -8%;
     }
-    .down{
-        &-text{
-            font-size: 5px;
-        }
+    .maps{
+        background: black;
+  padding-top: 10%;
+  text-transform: uppercase;
+  text-align: center;
+  }
+  .explain{
+      display: flex;
+      p{
+        font-family: 'Teko', sans-serif;
+        font-family: 'Cinzel', serif;
+        font-weight: 40px;
+      }
+  }
     }
-}
+    .down{
+        margin: 0 0 0 0;
+        h3{
+            font-size: 15px;
+        }
+
+    }
