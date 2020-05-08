@@ -437,6 +437,13 @@ header {
   padding-top: 10%;
   text-transform: uppercase;
   text-align: center;
+  &-text{
+      text-align: center;
+  }
+  iframe{
+      justify-content: center;
+      text-align: center;
+  }
   }
   .explain{
       display: flex;
@@ -446,6 +453,39 @@ header {
         font-weight: 40px;
       }
   }
+  .flip__body {
+      text-align: center;
+      justify-content: center;
+	position: relative;
+	width: 340px;
+	height: 300px;
+	transition: all 0.8s ease 0s;
+	transform-style: preserve-3d;
+}
+.flip__front,
+.flip__back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flip__front {
+	z-index: 2;
+	transform: rotateY(0deg);
+	background-color: black;
+}
+.flip__back {
+    transform: rotateY(-180deg);
+    background-color: black;
+}
+
+.flip:hover .flip__body {
+	transform: rotateY(-180deg);
+}
     }
     .down{
         margin: 0 0 0 0;
@@ -453,4 +493,156 @@ header {
             font-size: 15px;
         }
 
+    }
+@media (min-width: 496px) and (max-width: 744px){
+        .content{
+            background: none;
+            background-color: black;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 33vh;
+            &-text{
+                font-size:  30px;
+                padding-top: 5%;
+            }
+        }
+        .about{
+            max-width: 100%;
+            width: 100%;
+            background: none;
+            background-color: black;
+            display: block;
+            padding-top: 190px;
+            &-smile{
+                display: block;
+            }
+            &-theme{
+                padding-top: 30px;
+                font-size: 30px;
+                width: 100%;
+                text-align: center;
+                font-family: 'Teko', sans-serif;
+                font-family: 'Cinzel', serif;
+            }
+            img{
+               margin-left: 35%;
+            }
+            &-me{
+                margin: 0;
+                padding: 0;
+                max-width: 100%;
+                width: 100%;
+                background-color: black;
+                padding-top: 10%;
+                font-family: 'Teko', sans-serif;
+                font-family: 'Cinzel', serif;
+            }
+        }
+        .book{
+            max-width: 100%;
+            width: 100%;
+            padding-top: 200%;
+            &-advise{
+                font-size: 30px;
+            }
+            &-clever{
+                img{
+                    width: 40%;
+                }
+            }
+            &-kelly{
+                font-size: 25px;
+            }
+            &-mind{
+                img{
+                    width: 70px;
+                }
+            }
+            &-john{
+                    font-size: 20px;
+            }
+            &-sword{
+                img{
+                    width: 70px;
+                }
+            }
+            &-kitami{
+                font-size: 20px;
+            }
+    
+        }
+        .dream{
+            margin: -10% 0%;
+            padding-top: -10%;
+            &-text{
+                font-size: 22px;
+            }
+            .jobss{
+                width: 90%;
+            }
+        }
+        .github{
+            img{
+                width: 70%;
+            }
+        }
+        .socials{
+            margin: 0;
+            margin-top: -8%;
+        }
+        .maps{
+            background: black;
+      padding-top: 10%;
+      text-transform: uppercase;
+      text-align: center;
+      iframe{
+          width: 600px;
+      }
+      }
+      .explain{
+          display: flex;
+          p{
+            font-family: 'Teko', sans-serif;
+            font-family: 'Cinzel', serif;
+            font-weight: 40px;
+          }
+      }
+      .flip__body {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        transition: all 0.8s ease 0s;
+        transform-style: preserve-3d;
+    }
+    .flip__front,
+    .flip__back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flip__front {
+        z-index: 2;
+        transform: rotateY(0deg);
+        background-color: black;
+    }
+    .flip__back {
+        transform: rotateY(-180deg);
+        background-color: black;
+    }
+    
+    .flip:hover .flip__body {
+        transform: rotateY(-180deg);
+    }
+        }
+        .down{
+            margin: 0 0 0 0;
+            h3{
+                font-size: 20px;
+            }
+    
     }
